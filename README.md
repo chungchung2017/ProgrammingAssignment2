@@ -6,8 +6,7 @@ R programing: Caching the Inverse of a Matrix
 #be looked up in the cache rather than recomputed. In this Programming Assignment will take advantage of the scoping rules of 
 #the R language and how they can be manipulated to preserve state inside of an R object
 
-#We were given the hints which were "makeVector" and "cachemean"
-#The best way to approach it was adjusting the given function
+#We were given the hints which were "makeVector" and "cachemean". The best way of approaching was adjusting the given information.
 
 makeCacheMatrix <- function(x = matrix()) {
   
