@@ -10,9 +10,12 @@ R programing: Caching the Inverse of a Matrix
 #The best way of approaching was adjusting the given information.
 
 
+
 makeCacheMatrix <- function(x = matrix()) { 
-    inv<- NULL   
-          set <- function(y) {
+
+inv<- NULL   
+
+set <- function(y) {
                   x <<- y
                   inv <<- NULL
           }
