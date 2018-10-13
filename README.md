@@ -9,18 +9,17 @@ R programing: Caching the Inverse of a Matrix
 #We were given the hints which were "makeVector" and "cachemean". 
 #The best way of approaching was adjusting the given information.
 
+#1
 
+makeCacheMatrix <- function(x = matrix()) {
 
-makeCacheMatrix <- function(x = matrix()) { 
-
-inv<- NULL   
-
-set <- function(y) {
+  inv<- NULL   
+    set <- function(y) {
                   x <<- y
                   inv <<- NULL
           }
-          get <- function() x
-          setinv <- function(inverse) inv <<- inverse 
+     get <- function() x
+     setinv <- function(inverse) inv <<- inverse 
           getinv = function() inv
           list(set=set, get=get, 
                setinv=setinv, 
